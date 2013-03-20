@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Imagepath:</b>
+  <%= @user.imagePath %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= @user.surname %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%= @user.nickname %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @user.age %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @user.description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>Plz:</b>
+  <%= @user.plz %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.city %>
+</p>
+
+<p>
+  <b>Sporttypes:</b>
+  <%= @user.sportTypes %>
+</p>
+
+<p>
+  <b>Officehours:</b>
+  <%= @user.officeHours %>
+</p>
+
+<p>
+  <b>Trainingplan:</b>
+  <%= @user.trainingPlan %>
+</p>
+
+<p>
+  <b>nutritionPlan:</b>
+  <%= @user.nutritionPlan %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

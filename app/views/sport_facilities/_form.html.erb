@@ -1,0 +1,80 @@
+<%= form_for(@sport_facility) do |f| %>
+<% if @sport_facility.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@sport_facility.errors.count, "error") %> prohibited this sport_facility from being saved:</h2>
+
+	<ul>
+		<% @sport_facility.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
+
+<div>
+	<div class="contentHeader">
+		<div class="contentHeaderMain">
+			<div class="contentHeaderPicture">
+				<%= link_to( image_tag("user.png", :alt => "Picture", :class => "pictures"), "#") %>
+			</div>
+			<div class="contentHeaderField">
+				<div class="contentHeaderCoreData">
+					<%= f.label :name %>
+					<%= f.text_field :name %>
+				</div>
+				<div class="contentHeaderCoreData">
+					<%= f.label :sportTypes %>
+					<%= f.text_field :sportTypes %>
+				</div>
+			</div>
+		</div>
+		<div class="contentHeaderSubmit">
+			<%= f.submit %>
+		</div>
+	</div>
+	<div class="contentForm">
+		<div class="contentFormX1">
+			<div class="contentField">
+				<%= f.label :description %>
+				<br />
+				<%= f.text_field :description %>
+			</div>
+			<div class="contentField">
+				<%= f.label :address %>
+				<br />
+				<%= f.text_field :address %>
+			</div>
+			<div class="contentField">
+				<%= f.label :plz %>
+				<br />
+				<%= f.text_field :plz %>
+			</div>
+			<div class="contentField">
+				<%= f.label :city %>
+				<br />
+				<%= f.text_field :city %>
+			</div>
+		</div>
+		<div class="contentFormX2">
+			<div class="contentField">
+				<%= f.label :price %>
+				<br />
+				<%= f.text_field :price %>
+			</div>
+			<div class="contentField">
+				<%= f.label :openingHours %>
+				<br />
+				<%= f.text_field :openingHours %>
+			</div>
+			<div class="contentField">
+				<%= f.label :events %>
+				<br />
+				<%= f.text_field :events %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% end %>

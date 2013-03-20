@@ -1,0 +1,54 @@
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* Users Show */
+.caption {
+  font-size: 10px;
+}
+.detailsHead {
+  list-style: none;
+  display: inline;
+}
+.test {
+  color: #0000ff;
+}
+
+/* Sign up button */
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.round {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
